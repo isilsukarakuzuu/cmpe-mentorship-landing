@@ -20,7 +20,7 @@ export default function Navbar() {
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         {/* Left side (Desktop view) */}
         <Box sx={{ display: { xs: "none", md: "flex" }, gap: 4 }}>
-          <Button component={Link} to="/home" color="inherit">
+          <Button component={Link} to="/" color="inherit">
             Home
           </Button>
           <Button component={Link} to="/mentors" color="inherit">
@@ -46,7 +46,7 @@ export default function Navbar() {
             anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
             transformOrigin={{ vertical: "top", horizontal: "left" }}
           >
-            <MenuItem onClick={handleClose} component={Link} to="/home">
+            <MenuItem onClick={handleClose} component={Link} to="/">
               Home
             </MenuItem>
             <MenuItem onClick={handleClose} component={Link} to="/mentors">

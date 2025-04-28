@@ -14,8 +14,7 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             {/* If URL is /, redirect to /home */}
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/mentors" element={<Mentors />} />
           </Routes>
         </Suspense>
