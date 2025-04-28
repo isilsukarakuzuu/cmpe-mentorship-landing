@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AppBar, Toolbar, Typography, Button, IconButton, Menu, MenuItem, Box } from "@mui/material";
+import { AppBar, Toolbar, Button, IconButton, Menu, MenuItem, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
@@ -20,7 +20,7 @@ export default function Navbar() {
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         {/* Left side (Desktop view) */}
         <Box sx={{ display: { xs: "none", md: "flex" }, gap: 4 }}>
-          <Button component={Link} to="/" color="inherit">
+          <Button component={Link} to="/home" color="inherit">
             Home
           </Button>
           <Button component={Link} to="/mentors" color="inherit">
@@ -46,7 +46,7 @@ export default function Navbar() {
             anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
             transformOrigin={{ vertical: "top", horizontal: "left" }}
           >
-            <MenuItem onClick={handleClose} component={Link} to="/">
+            <MenuItem onClick={handleClose} component={Link} to="/home">
               Home
             </MenuItem>
             <MenuItem onClick={handleClose} component={Link} to="/mentors">

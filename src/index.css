@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Schibsted Grotesk';
-  src: url('/Schibsted_Grotesk/SchibstedGrotesk-Regular.woff2') format('woff2');
+  src: url('/Schibsted_Grotesk/static/SchibstedGrotesk-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Schibsted Grotesk';
-  src: url('/Schibsted_Grotesk/SchibstedGrotesk-Bold.woff2') format('woff2');
+  src: url('/Schibsted_Grotesk/static/SchibstedGrotesk-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 }
 
 :root {
-  font-family: 'Schibsted Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Schibsted Grotesk', system-ui;
   line-height: 1.5;
   font-weight: 400;
 
