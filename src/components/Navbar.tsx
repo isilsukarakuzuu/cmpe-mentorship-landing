@@ -59,10 +59,25 @@ export default function Navbar() {
         <Button
           variant="contained"
           color="primary"
-          sx={{ borderRadius: 2 }}
+          component="a"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfzoG1J_F9twsPOLkLa48g0cqnjnhjErjYaVcFbgrep8PoGGg/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{
+            borderRadius: 2,
+            color: "white",
+            textDecoration: "none",
+            "&:hover": {
+              backgroundColor: "#1976d2",
+              color: "white",
+              transform: "scale(1.02)",
+            },
+            transition: "background-color 0.3s ease-in-out, transform 0.3s ease-in-out",
+          }}
         >
           Apply
         </Button>
+
       </Toolbar>
     </AppBar>
   );
