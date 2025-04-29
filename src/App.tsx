@@ -1,6 +1,7 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Suspense, lazy } from "react";
+import Footer from "./components/Footer";
 
 // Lazy imports
 const Home = lazy(() => import("./pages/Home"));
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </Suspense>
       </div>
+      <Footer />
     </>
   );
 }
