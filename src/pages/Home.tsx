@@ -22,7 +22,7 @@ export default function Home() {
           By applying to this program, you commit to regular communication with your mentor and participating in monthly harvest meetings.
         </p>
         <p className="text-lg leading-relaxed text-gray-700 mb-4">
-          <strong>Consent:</strong> You agree to share your information with CMPE ÖTK and allow sharing of program photos on CMPE ÖTK’s platforms.
+          <strong>Eligibility:</strong> Fill out the communication form and follow CMPE ÖTK on social media.
         </p>
 
       </section>
