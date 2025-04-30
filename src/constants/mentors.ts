@@ -24,6 +24,7 @@ export type Mentor = {
   offerings: string[];
   expectations: string;
   photo: string;
+  linkedin?: string;
 };
 
 export const mentors: Mentor[] = [
@@ -46,6 +47,7 @@ Social sciences, machine learning, NLP research, traveling, hiking, beach volley
     expectations: `
 Curiosity, eagerness to explore research topics, commitment to growth.`,
     photo: berkAtilPhoto,
+    linkedin: "https://www.linkedin.com/in/berk-at%C4%B1l-7316b5133/",
   },
   {
     name: "Başak Önder",
@@ -63,6 +65,8 @@ Problem-solving, algorithmic trading, traveling, gaming, knitting, TV series.`,
     expectations: `
 Curiosity, dedication to problem-solving, openness to feedback.`,
     photo: basakOnderPhoto,
+    linkedin: "https://www.linkedin.com/in/basak-onder/",
+
   },
   {
     name: "Ömer Benzer",
@@ -80,6 +84,7 @@ Systems programming, GUIs, HPC, C++, snowboarding, hiking.`,
     expectations: `
 Curiosity, motivation especially toward system-level programming.`,
     photo: omerBenzerPhoto,
+    linkedin: "https://www.linkedin.com/in/ocebenzer/",
   },
   {
     name: "Hamza Işıktaş",
@@ -95,6 +100,7 @@ Mobile app development, AI integration into applications, movies, books, gaming.
     expectations: `
 Curiosity, proactiveness, willingness to grow in mobile software development.`,
     photo: hamzaIsiktasPhoto,
+    linkedin: "https://www.linkedin.com/in/isiktashamza/",
   },
   {
     name: "Demet Yayla",
@@ -111,6 +117,7 @@ High-frequency trading systems, healthcare technology, game programming, swimmin
     expectations: `
 Curiosity, proactivity, motivation to specialize in real-time systems.`,
     photo: demetYaylaPhoto,
+    linkedin: "https://www.linkedin.com/in/demetyayla/",
   },
   {
     name: "Ahmet Gedemenli",
@@ -127,6 +134,7 @@ Database design, Postgres internals, distributed systems, competitive programmin
     expectations: `
 Curiosity about databases, strong software engineering commitment.`,
     photo: ahmetGedemenliPhoto,
+    linkedin: "https://www.linkedin.com/in/ahmet-gedemenli-78170b199/"
   },
   {
     name: "Furkan Atasoy",
@@ -146,6 +154,7 @@ Curiosity about databases, strong software engineering commitment.`,
     expectations: `
   Curiosity, proactiveness, openness to feedback, and motivation to grow consistently as a Software Engineer.`,
     photo: furkanAtasoyPhoto,
+    linkedin: "https://www.linkedin.com/in/atasoyfurkan/",
   },
   {
     name: "Berke Çalışkan",
@@ -167,6 +176,7 @@ Curiosity about databases, strong software engineering commitment.`,
     expectations: `
   Curiosity, openness to feedback, and motivation to explore and grow.`,
     photo: berkCaliskanPhoto,
+    linkedin: "https://www.linkedin.com/in/berkecaliskan/",
   },
   {
     name: "Ekin Güngör",
@@ -190,6 +200,7 @@ Curiosity about databases, strong software engineering commitment.`,
     expectations: `
   Open-mindedness, proactivity, communication, willingness to collaborate on specific creative or technical projects. I believe mentorship works best as a natural, inspiring collaboration.`,
     photo: ekinGungorPhoto,
+    linkedin: "https://www.linkedin.com/in/ekin-gungor/",
   },
   {
     name: "Anıl Seyrek",
@@ -212,5 +223,23 @@ Curiosity about databases, strong software engineering commitment.`,
     expectations: `
   Honesty, curiosity, and resourcefulness. I value philosophical and conscientious engagement with engineering. If you're motivated to grow as both an engineer and a human — and see engineering as a way to improve society — I’d be glad to mentor you.`,
     photo: anilSeyrekPhoto,
-  }
+    linkedin: "https://www.linkedin.com/in/anilseyrek/",
+  },
+  {
+    name: "Muhammet Batuhan İlhan",
+    shortDescription: "Full-Stack Engineer at Workmate Labs, experienced in modern web technologies and AI integrations.",
+    description: `
+  I’m a Full-Stack Engineer with experience in building and scaling modern web applications and integrations that solve real-world problems. I started my career working on diverse engineering challenges, eventually contributing to projects involving AI integrations, particularly using tools like Next.js and FastAPI.
+  
+  Currently, I live in İstanbul and work at Workmate Labs, a New York based AI start-up.`,
+    interests: `
+  Web development, AI integrations, full-stack technologies, sports, table tennis (former Boğaziçi team member).`,
+    offerings: [
+      "Professional life guidance for students",
+      "Social life and adaptation support for new university students (as a recent graduate)"
+    ],
+    expectations: `-`,
+    photo: muhammetBatuhanIlhanPhoto,
+    linkedin: "https://www.linkedin.com/in/batuhan-ilhan-150416241/"
+  },
 ];

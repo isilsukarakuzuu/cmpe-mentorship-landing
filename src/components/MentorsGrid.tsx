@@ -16,6 +16,7 @@ export default function MentorGrid({ mentors, onSelect }: MentorGridProps) {
           description={mentor.shortDescription}
           photo={mentor.photo}
           onClick={() => onSelect(mentor)}
+          linkedinUrl={mentor.linkedin}
         />
       ))}
     </div>
