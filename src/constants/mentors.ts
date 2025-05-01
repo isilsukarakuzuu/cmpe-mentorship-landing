@@ -13,6 +13,7 @@ import furkanAtasoyPhoto from "../assets/mentors/furkan-atasoy.png";
 import anilSeyrekPhoto from "../assets/mentors/anil-seyrek.jpeg";
 import ekinGungorPhoto from "../assets/mentors/ekin-gungor.jpg";
 import muhammetBatuhanIlhanPhoto from "../assets/mentors/muhammet-batuhan-ilhan.jpg";
+import bengisuOzaydinPhoto from "../assets/mentors/bengisu-ozaydin.jpeg";
 
 
 
@@ -267,5 +268,29 @@ Curiosity about databases, strong software engineering commitment.`,
   I believe this program can help both of us see our paths ahead more clearly.`,
     photo: dogukanTurksoyPhoto, 
     linkedin: "https://www.linkedin.com/in/dogukanturksoy/"
-  }
+  },
+  {
+    name: "Bengisu Özaydın",
+    shortDescription: "Protocol Engineer in the blockchain industry, open-source contributor, and two-time Google intern with a background in game development.",
+    description: `
+  I am working as a protocol engineer in the blockchain industry, building blockchain infrastructure.
+  
+  Throughout my bachelor's, I was working mainly as a game developer and did two internships at Google. I joined the blockchain industry right after finishing my bachelor's in the application development team at Fuel Labs. Since then, I have contributed to multiple blockchain apps and infrastructure, co-authored an Ethereum Improvement Proposal, mentored many hackers in hackathons around the world, and given talks and joined panels at various conferences.
+  
+  In this field, problems are solved and technology advances through fast-moving startups — some forming and dissolving rapidly. It feels like surfing, with constant shifts in the market and investor dynamics. I prefer this dynamism over big tech. I’m proud to be contributing to open-source.
+  
+  Currently, I’m based in Lisbon, Portugal, and working remotely at Essential Contributions. I focus on building a new blockchain to unify fragmented developer and user experiences. I primarily use Rust to build blockchain components (node, validator, etc.) and have experience with VMs, SDKs, languages, and compilers.`,
+    interests: `
+  Consciousness research, cognitive sciences, philosophy, psychology, software–hardware art projects (e.g. LASER shows, self-playing instruments), sports, music, movement, and creative technology.`,
+    offerings: [
+      "Blockchain engineering advice and industry insights",
+      "Encouragement to take unconventional paths and use programming as a tool for personal expression",
+      "Cultural and practical guidance for living in Japan (Tsukuba) and Portugal",
+      "Deep, meaningful conversations around identity, purpose, and self-discovery"
+    ],
+    expectations: `
+  I’d love for you to attune to yourself (body and mind), so we can bring out your true direction organically. Be direct and open with your questions, conversations, and feedback — I’ll do the same.`,
+    photo: bengisuOzaydinPhoto, 
+    linkedin: undefined 
+  },
 ];
