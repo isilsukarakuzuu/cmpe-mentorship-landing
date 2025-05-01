@@ -7,7 +7,7 @@ import omerBenzerPhoto from "../assets/mentors/omer-benzer.jpeg";
 import hamzaIsiktasPhoto from "../assets/mentors/hamza-isiktas.jpg";
 import demetYaylaPhoto from "../assets/mentors/demet-yayla.jpeg";
 import ahmetGedemenliPhoto from "../assets/mentors/ahmet-gedemenli.jpeg";
-import abdurrahimEskiPhoto from "../assets/mentors/abdurrahim-eski.jpg";
+import dogukanTurksoyPhoto from "../assets/mentors/dogukan-turksoy.jpg";
 import berkCaliskanPhoto from "../assets/mentors/berk-caliskan.jpg";
 import furkanAtasoyPhoto from "../assets/mentors/furkan-atasoy.png";
 import anilSeyrekPhoto from "../assets/mentors/anil-seyrek.jpeg";
@@ -242,4 +242,30 @@ Curiosity about databases, strong software engineering commitment.`,
     photo: muhammetBatuhanIlhanPhoto,
     linkedin: "https://www.linkedin.com/in/batuhan-ilhan-150416241/"
   },
+  {
+    name: "Doğukan Türksoy",
+    shortDescription: "Software Developer with 4 years of experience, currently working at Migros on backend systems and supporting a new startup’s technical growth.",
+    description: `
+  I’m a Software Developer with 4 years of experience, mainly working with Java, Spring Boot, React, and MySQL. I began my career at IBM, where I helped solve technical challenges for international clients using IBM technologies. Later, I played a key role in expanding a U.S.-based e-commerce company into major marketplaces like Amazon, Walmart, and Home Depot.
+  
+  Currently, I live in Bostancı, Istanbul, and I’m working at Migros, focusing on backend systems for product stock and campaign management. I’m also the only experienced developer at a newly founded startup, which gives me the chance to support and shape the technical direction from the ground up.`,
+    interests: `
+  Music (especially guitar), board games, indie video games, basketball, traveling, remote work lifestyle, and enjoying Marmaris when visiting family.`,
+    offerings: [
+      "Balancing academic and professional life based on my own experience",
+      "Sharing insights and stories from various university-side projects",
+      "Fresh tips on interviews and navigating job changes",
+      "Thoughtful listening and helping you reflect on your own path"
+    ],
+    expectations: `
+  I expect you to feel comfortable giving me feedback too, and know that I’m aware my own path isn’t set in stone either.
+  
+  I hope our time together reduces your stress—not adds to it.
+  
+  Remind me of the joy and spirit of student life.
+  
+  I believe this program can help both of us see our paths ahead more clearly.`,
+    photo: dogukanTurksoyPhoto, 
+    linkedin: "https://www.linkedin.com/in/dogukanturksoy/"
+  }
 ];
