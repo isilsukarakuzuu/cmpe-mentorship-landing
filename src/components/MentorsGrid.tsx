@@ -30,6 +30,7 @@ export default function MentorsGrid({ mentors, onSelect }: MentorGridProps) {
         title={m.name}
         description={m.shortDescription}
         photo={m.photo}
+        linkedinUrl={m.linkedin}
         onClick={() => onSelect(m)}
         />
       ))}

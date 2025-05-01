@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Suspense, lazy } from "react";
 import Footer from "./components/Footer";
@@ -14,8 +14,9 @@ function App() {
       <div className="pt-20 px-8 max-w-7xl mx-auto">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            {/* If URL is /, redirect to /home */}
-            <Route path="/" element={<Home />} />
+            {/* Redirect "/" to "/home" */}
+            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/mentors" element={<Mentors />} />
           </Routes>
         </Suspense>

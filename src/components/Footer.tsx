@@ -62,7 +62,7 @@ export default function Footer() {
         <Box>
           <IconButton
             component="a"
-            href="https://instagram.com/cmpeotk"
+            href="https://www.instagram.com/boun_cmpe_otk/"
             target="_blank"
             rel="noopener noreferrer"
             color="primary"
@@ -71,7 +71,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             component="a"
-            href="https://twitter.com/cmpeotk"
+            href="https://x.com/boun_cmpe_otk"
             target="_blank"
             rel="noopener noreferrer"
             color="primary"
@@ -80,7 +80,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             component="a"
-            href="https://youtube.com/cmpeotk"
+            href="https://www.youtube.com/@boun_cmpe_otk"
             target="_blank"
             rel="noopener noreferrer"
             color="primary"
