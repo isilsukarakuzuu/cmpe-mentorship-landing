@@ -1,4 +1,11 @@
-import { Card, CardContent, CardActions, Typography, Button, CardMedia } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardActions,
+  Typography,
+  Button,
+  CardMedia,
+} from "@mui/material";
 
 import { LinkedIn } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
@@ -25,10 +32,15 @@ export default function MentorCard({ title, description, photo, onClick, linkedi
     >
       <CardMedia
         component="img"
-        height="200"
         image={photo}
         alt={title}
+        sx={{
+          width: "100%",              
+          height: { xs: 160, md: 200 },
+          objectFit: "cover",
+        }}
       />
+
       <CardContent>
         <Typography gutterBottom variant="h6" component="div" noWrap>
           {title}
@@ -37,6 +49,7 @@ export default function MentorCard({ title, description, photo, onClick, linkedi
           {description}
         </Typography>
       </CardContent>
+      
       <CardActions sx={{ mt: "auto", justifyContent: "space-between" }}>
         <Button size="small">
           Learn More

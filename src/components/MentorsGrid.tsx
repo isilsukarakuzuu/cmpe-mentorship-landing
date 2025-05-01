@@ -1,3 +1,5 @@
+// src/components/MentorsGrid.tsx
+import Box from "@mui/material/Box";
 import MentorCard from "./MentorCard";
 import { Mentor } from "../constants/mentors";
 
@@ -6,10 +8,22 @@ type MentorGridProps = {
   onSelect: (mentor: Mentor) => void;
 };
 
-export default function MentorGrid({ mentors, onSelect }: MentorGridProps) {
+export default function MentorsGrid({ mentors, onSelect }: MentorGridProps) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {mentors.map((mentor, index) => (
+    <Box
+      sx={{
+        display: "grid",
+        gap: 3,
+        gridTemplateColumns: {
+          xs: "1fr",              // 1 card / row  <600 px
+          sm: "repeat(2, 1fr)",   // 2            ≥600 px
+          md: "repeat(3, 1fr)",   // 3            ≥900 px
+          lg: "repeat(4, 1fr)",   // 4            ≥1200 px
+        },
+        px: { xs: 2, sm: 4 },     // side-padding for small screens
+      }}
+    >
+      {mentors.map((m, i) => (
         <MentorCard
           key={index}
           title={mentor.name}
@@ -19,6 +33,6 @@ export default function MentorGrid({ mentors, onSelect }: MentorGridProps) {
           linkedinUrl={mentor.linkedin}
         />
       ))}
-    </div>
+    </Box>
   );
 }
