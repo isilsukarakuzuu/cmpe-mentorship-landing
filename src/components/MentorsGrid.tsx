@@ -21,16 +21,16 @@ export default function MentorsGrid({ mentors, onSelect }: MentorGridProps) {
           lg: "repeat(4, 1fr)",   // 4            ≥1200 px
         },
         px: { xs: 2, sm: 4 },     // side-padding for small screens
+        pt: 8,
       }}
     >
       {mentors.map((m, i) => (
         <MentorCard
-          key={index}
-          title={mentor.name}
-          description={mentor.shortDescription}
-          photo={mentor.photo}
-          onClick={() => onSelect(mentor)}
-          linkedinUrl={mentor.linkedin}
+        key={i}
+        title={m.name}
+        description={m.shortDescription}
+        photo={m.photo}
+        onClick={() => onSelect(m)}
         />
       ))}
     </Box>

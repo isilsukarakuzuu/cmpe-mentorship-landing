@@ -18,7 +18,7 @@ export default function MentorsPage() {
   };
 
   return (
-    <div className="px-6 py-8">
+    <div className="pt-20 px-8 max-w-7xl mx-auto">
       <MentorsGrid mentors={mentors} onSelect={handleSelectMentor} />
 
       {selectedMentor && (

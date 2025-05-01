@@ -7,9 +7,6 @@ export default function Home() {
       {/* Program Introduction */}
       <section className="mb-12 text-center">
         <h1 className="text-4xl font-bold mb-6">{homepageTexts.welcomeTitle}</h1>
-        <p className="text-lg leading-relaxed text-gray-700">
-          {homepageTexts.welcomeParagraph}
-        </p>
       </section>
 
       {/* Application Information */}
