@@ -1,4 +1,11 @@
-import { Card, CardContent, CardActions, Typography, Button, CardMedia } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardActions,
+  Typography,
+  Button,
+  CardMedia,
+} from "@mui/material";
 
 type MentorCardProps = {
   title: string;
@@ -7,24 +14,38 @@ type MentorCardProps = {
   onClick: () => void;
 };
 
-export default function MentorCard({ title, description, photo, onClick }: MentorCardProps) {
+export default function MentorCard({
+  title,
+  description,
+  photo,
+  onClick,
+}: MentorCardProps) {
   return (
-    <Card 
-      onClick={onClick} 
-      sx={{ 
-        cursor: "pointer", 
-        display: "flex", 
-        flexDirection: "column", 
-        height: "100%", 
-        '&:hover': { boxShadow: 6 } 
+    <Card
+      onClick={onClick}
+      sx={{
+        cursor: "pointer",
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+        width: "100%",          
+        /* cap width only on medium+ screens */
+        maxWidth: { xs: "100%", md: 300 },
+        mx: "auto",             
+        "&:hover": { boxShadow: 6 },
       }}
     >
       <CardMedia
         component="img"
-        height="200"
         image={photo}
         alt={title}
+        sx={{
+          width: "100%",              
+          height: { xs: 160, md: 200 },
+          objectFit: "cover",
+        }}
       />
+
       <CardContent>
         <Typography gutterBottom variant="h6" component="div" noWrap>
           {title}
@@ -33,9 +54,10 @@ export default function MentorCard({ title, description, photo, onClick }: Mento
           {description}
         </Typography>
       </CardContent>
+
       <CardActions sx={{ mt: "auto" }}>
         <Button size="small" fullWidth>
-          Learn More
+          Learn&nbsp;More
         </Button>
       </CardActions>
     </Card>
