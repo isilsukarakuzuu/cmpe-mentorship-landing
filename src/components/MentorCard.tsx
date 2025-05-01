@@ -7,19 +7,18 @@ import {
   CardMedia,
 } from "@mui/material";
 
+import { LinkedIn } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
+
 type MentorCardProps = {
   title: string;
   description: string;
   photo: string;
   onClick: () => void;
+  linkedinUrl?: string;
 };
 
-export default function MentorCard({
-  title,
-  description,
-  photo,
-  onClick,
-}: MentorCardProps) {
+export default function MentorCard({ title, description, photo, onClick, linkedinUrl }: MentorCardProps) {
   return (
     <Card
       onClick={onClick}
@@ -28,11 +27,7 @@ export default function MentorCard({
         display: "flex",
         flexDirection: "column",
         height: "100%",
-        width: "100%",          
-        /* cap width only on medium+ screens */
-        maxWidth: { xs: "100%", md: 300 },
-        mx: "auto",             
-        "&:hover": { boxShadow: 6 },
+        '&:hover': { boxShadow: 6 }
       }}
     >
       <CardMedia
@@ -54,12 +49,25 @@ export default function MentorCard({
           {description}
         </Typography>
       </CardContent>
-
-      <CardActions sx={{ mt: "auto" }}>
-        <Button size="small" fullWidth>
-          Learn&nbsp;More
+      
+      <CardActions sx={{ mt: "auto", justifyContent: "space-between" }}>
+        <Button size="small">
+          Learn More
         </Button>
+        {linkedinUrl && (
+          <IconButton
+            component="a"
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            color="primary"
+            sx={{ ml: 1 }}
+          >
+            <LinkedIn />
+          </IconButton>
+        )}
       </CardActions>
+
     </Card>
   );
 }
